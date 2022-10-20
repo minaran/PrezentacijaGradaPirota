@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Mirjana Rančić">
+      <link rel="icon" href="img/icons8-bus-48.png" />
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/styleKomentari.css">
+      <title>Komentari i kontakt</title>
+</head>
+<body>
+    <div class="header-div">
+      <button class="button" onclick="history.back(-1)">&#60&#60&#60 Vrati se nazad</button>
+        
+        <ul class="menu">
+          <li class="menu-item"><a href="index.html">Upoznajte grad Pirot</a></li>
+          <li class="menu-item"><a href="gumenaobuca.html">TIGAR gumena obuća</a></li>
+          <li class="menu-item"><a href="cilimi.html">Pirotski ćilim</a></li>
+          <li class="menu-item"><a href="komentari.html">Komentari</a></li>
+          <li class="menu-item"><a href="mailto:minarancic@gmail.com">Direktan E-mail kontakt</a></li>
+        </ul>
+        <div class="burger"><p class="burger-icon">Meni</p>
+          <ul class="burger-menu">
+            <li class="burger-menu-item"><a href="index.html">Upoznajte grad Pirot</a></li>
+            <li class="burger-menu-item"><a href="gumenaobuca.html">TIGAR gumena obuća</a></li>
+            <li class="burger-menu-item"><a href="cilimi.html">Pirotski ćilim</a></li>
+            <li class="burger-menu-item"><a href="komentari.html">Komentari</a></li>
+            <li class="burger-menu-item"><a href="mailto:minarancic@gmail.com">Direktan E-mail kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <button id="dugmic">Kliknite da se podsetite...koji je danas dan, datum i vreme ?</button>
+      <p id="sat">Danas je:</p>
+      <script>
+      document.getElementById("dugmic").addEventListener("click", displayDate);
+      function displayDate(){
+document.getElementById("sat").innerHTML = Date();}
+      </script>
+
+<p><font color="blue"><b>Ukoliko želite da posetite Pirot, pogledajte autobuski red vožnje polazaka iz Beograda:</font></b></p>
+
+<table bordercolor="blue" border="2" width="50%" height="150" cellspacing="2" cellpading="0">
+  <tbody align="center">
+      <tr>
+          <td rowspan="4">Saobraća svakodnevno</td>
+          <td colspan="2" height="30%" bgcolor="blue"><font color="#fffff">Polazak: Beograd &#160 &#160 &#160 &#160 &#160 &#160 &#160 &#160 Dolazak: Pirot</font></td>
+          <td rowspan="2">Povratna karta</td>
+      </tr>
+      <tr>
+          <td width="40%">11:15<br><br>14:30<br><br>17:30</td>
+          <td width="40%">15:15<br><br>18:45<br><br>21:45</td>
+      </tr>
+      <tr>
+          <td colspan="2">Informacije i rezervacije na telefon: 011/2636299</td>
+          <td bgcolor="blue"><font color="#fffff"> &#160 free &#160 WiFi zone</font></td>
+      </tr>
+      <tr>
+          <td colspan="3" height="15%">Saobraćajno preduzeće PRESTO &#174 &#160 www.presto.rs</td>
+      </tr>
+  </tbody>
+</table>
+
+<form action="">
+<label for="datumIvreme">Datum i vreme:</label>
+<input type="datetime-local" name="" id="datumIvreme" />
+<font color="blue"><b>&#160 &#160 Isplanirajte svoje putovanje...i vidimo se !!!</font></b>
+<hr>
+</form>
+
+<form action="" method="post" id="commentform" class="comment-form">
+  <h3>Vaše mišljenje nam znači...    </h3>
+    <br>Da li ste već znali nešto o pirotskim brendovima:<br><br>
+    <input type="radio" name="kurs" value="kurs1" checked />Prvi put saznajem o njima<br>
+    <input type="radio" name="kurs" value="kurs2" />Znao sam samo za neke (kačkavalj, ćilim, gumena obuća)<br>
+    <input type="radio" name="kurs" value="kurs3" />Znao sam skoro sve o pirotskim brendovima <br>
+<br>
+<br>
+  <label for="vol">Da li Vam se dopala prezentacija o gradu Pirotu ?</label>
+  <input type="range" id="vol" name="vol" min="0" max="100"/>
+
+<br>Molim Vas da ostavite komentar, pohvalu ili sugestiju. Hvala!!!
+<br>
+<div id="comment-textarea">
+  <label class="screen-reader-text" for="comment"></label>
+  <textarea name="comment" id="comment" cols="20" rows="10" required="required" class="textarea-comment" placeholder="Vaš komentar..." style="min-width: 542px;" width: 200px; height: 200px;></textarea>
+</div>
+<div id="comment-input">
+  <input id="author" name="author" type="text" value="" placeholder="Vaše ime je..." size="35" required="required">
+  <input id="email" name="email" type="email" value="" placeholder="Vaša E-mail adresa..." size="35" required="required">
+</div>
+<p class="form-submit">
+  <input id="comment-submit" name="submit" type="submit" value="Postavi komentar">	
+  <input type="reset" value="Resetuj formu!"/></p>		
+<hr>   
+</form>
+</body>
+</html>
