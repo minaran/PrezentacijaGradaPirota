@@ -1,0 +1,84 @@
+.menu-item:nth-child(2) {
+    font-weight: bold;
+}
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+p   {
+    font-style: normal;
+    color: rgb(137, 17, 137);
+    margin: 0px;
+    padding: 0px;
+}
+a   {
+    font-style: normal;
+    color: rgb(12, 1, 18);
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    text-align: justify;
+}
+#tipObuce {
+    background-color: rgb(100, 50, 100);
+    color: wheat;
+    width: 60%;
+    margin: 0px 20px;
+    
+    border-radius: 10px;
+    border: 4px dotted rgb(219, 166, 97);
+}
+#tipObuce {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.podnaslov {
+    text-align: center;
+    margin: 20px;
+}
+
+header, #naslov {
+    width: 60%;
+    margin: 20px;
+    padding: 2px;
+    background-color: rgba(200, 140, 140, 0.5);
+    border: 2px dotted darkviolet;
+    border-radius: 10px;
+    }
+
+.gumenaObuca {
+    display: flex;
+    justify-content: center;
+    
+    height: 620px;
+    background-color: rgb(250, 230, 250);
+  }
+.hoover-zoom {
+    width: 500vw;
+    height: 500vh;
+}
+img {
+    margin-top: 65%;
+    margin-left: 5%;
+    transition: transform 0.8s ease;        /*brzina kojom se uveca i smanji slika*/
+    border: 2px solid rgb(137, 17, 137);
+    border-radius: 5px;
+    cursor: pointer;       
+}
+.zoom:hover {
+    transform: scale(2.4);            /*velicina na koju se uveca slika*/
+}
+#logo{
+    margin:0;
+    
+}
+
+
+    @media (max-width: 800px) {
+        .gumenaObuca {
+          flex-direction: column;
+        }
+      }
+      

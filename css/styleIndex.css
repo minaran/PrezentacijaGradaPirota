@@ -1,0 +1,39 @@
+.menu-item:nth-child(1) {
+    font-weight: bold;
+}
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+#hajlajt {
+    color:rgb(50, 150, 80);
+    }
+
+img.centar{
+    
+  width: 100%;
+  height: auto;
+}
+img.img-fluid {
+  width: 50%;
+  height: auto;
+
+}
+
+#myBtn {
+    padding: 10px 10px;
+    font-size: 12px;
+    text-align: center;
+    margin:0 0 0 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#ffffff;
+    background-color: #0834e3;
+    border: none;
+    border-radius: 2px;}
+
+
+iframe.video {
+  width: 100%;
+  height: auto;
+}    
+

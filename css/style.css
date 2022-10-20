@@ -1,0 +1,71 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* dugmici za sledecu i vracanje na prethodnu stranicu */
+.button {
+padding: 5px 5px;
+font-size: 14px;
+text-align: center;
+margin:0;
+color:rgb(0, 0, 0);
+background-color: #926a99;
+border: none;
+border-radius: 5px;
+box-shadow: 0 4px 2px  rgb(179, 177, 177);
+}
+.button:hover{
+    background-color: #dbb3f6;
+}
+.button:active {
+    background-color: rgb(180, 140, 180);
+    box-shadow: 0 4px 2px rgb(108, 108, 108);
+    transform: translateY(4px);
+}
+body {
+    margin: 0;
+}
+.header-div {
+    background-color: rgba(180, 140, 180, 0.7);
+}
+/* podesavanja za header meni stranica kao flex prikaz, lista bez buleta */ 
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0em 1em 0em 1em;
+}
+.menu-item {
+    padding: 5px 20px;
+}
+.menu a {
+    color: rgb(81, 4, 81);
+    text-decoration: none;
+}
+.menu-item:hover{
+    background-color: rgba(180, 100, 180, 0.5);
+    border-radius: 20px;
+}
+.burger {
+    display: none;
+}
+.burger-menu {
+    display: none;
+}
+.burger-icon {
+    margin: 16px;
+}
+hr {
+    border-top: 1px dashed rgb(180, 140, 180);
+}
+
+@media only screen and (width<=800px) {
+    .menu {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .burger:hover > .burger-menu {
+        display: block;
+    }
+}

@@ -1,0 +1,25 @@
+.menu-item:nth-child(4) {
+    font-weight: bold;
+}
+form {
+    padding: 1em;
+}
+
+form div {
+    padding: 1em 0em;
+}
+
+input[type="text"]:focus {
+    background-color: rgb(255, 255, 155);
+}
+
+input[type="email"]:valid {
+    background-color: rgb(255, 255, 155);
+}
+
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+hr {border-top: 1px dashed rgb(180, 140, 180);}
